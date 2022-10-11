@@ -1,7 +1,12 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import type { NextPage } from "next";
+import Head from "next/head";
+import Image from "next/image";
+import { Badge } from "../Components/Badge/Badge";
+import { FacebookIcon } from "../Components/Icons/FacebookIcon";
+import { InstagramIcon } from "../Components/Icons/InstagramIcon";
+import { TwitterIcon } from "../Components/Icons/TwitterIcon";
+import { YoutubeIcon } from "../Components/Icons/YoutubeIcon";
+import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
   return (
@@ -13,44 +18,24 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+        <h1 className="text-3xl font-bold underline">Hello world!</h1>
+        <h1 className="text-3xl font-oswald">
+          Các bệnh hô hấp thường gặp khi trời trở lạnh
         </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.tsx</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+        <h1 className="text-3xl font-bold underline font-roboto">
+          Các bệnh hô hấp thường gặp khi trời trở lạnh
+        </h1>
+        <FacebookIcon />
+        <TwitterIcon />
+        <InstagramIcon />
+        <YoutubeIcon />
+        {/* <span className="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 dark:bg-blue-200 dark:text-blue-800">
+          Default
+        </span> */}
+        <Badge text={"All"} color={"bg-primary"} />
+        <Badge text={"Football"} color={"bg-light-purple"} />
+        <Badge text={"Cricket"} color={"bg-light-green"} />
+        <Badge text={"Baseketball"} color={"bg-light-blue"} />
       </main>
 
       <footer className={styles.footer}>
@@ -59,14 +44,14 @@ const Home: NextPage = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
+          Powered by{" "}
           <span className={styles.logo}>
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>
         </a>
       </footer>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
