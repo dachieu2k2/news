@@ -17,6 +17,8 @@ module.exports = {
       "light-brown": "#997C00",
       "light-brown": "#997C00",
       "light-light-blue": "#49CFE8",
+      "text-color-2d": "#2D2D2D",
+      "text-color-39": "#393939",
     },
     extend: {
       fontFamily: {

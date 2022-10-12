@@ -2,10 +2,12 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import { Badge } from "../Components/Badge/Badge";
+import { SimpleCard } from "../Components/Cards/SimpleCard";
 import { FacebookIcon } from "../Components/Icons/FacebookIcon";
 import { InstagramIcon } from "../Components/Icons/InstagramIcon";
 import { TwitterIcon } from "../Components/Icons/TwitterIcon";
 import { YoutubeIcon } from "../Components/Icons/YoutubeIcon";
+import { Line } from "../Components/Line/Line";
 import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
@@ -36,6 +38,8 @@ const Home: NextPage = () => {
         <Badge text={"Football"} color={"bg-light-purple"} />
         <Badge text={"Cricket"} color={"bg-light-green"} />
         <Badge text={"Baseketball"} color={"bg-light-blue"} />
+        <Line />
+        <SimpleCard />
       </main>
 
       <footer className={styles.footer}>
