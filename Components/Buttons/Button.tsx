@@ -10,14 +10,14 @@ interface IButton {
   width?: string;
 }
 
-export const Button: React.FC<IButton> = ({ ...rest }) => {
+export const Button: React.FC<IButton> = ({ children, ...rest }) => {
   return (
     <button
       type="button"
       {...rest}
       className="text-white bg-text-color-f6 hover:bg-text-color-f6/70 transition duration-300 ease-in-out font-medium text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 dark:bg-text-color-f6 "
     >
-      PURCHASE NOW
+      {children}
     </button>
   );
 };
