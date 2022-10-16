@@ -1,8 +1,21 @@
-export const Button = () => {
+import React from "react";
+
+interface IButton {
+  border?: string;
+  color?: string;
+  children?: React.ReactNode;
+  height?: string;
+  onClick?: () => void;
+  radius?: string;
+  width?: string;
+}
+
+export const Button: React.FC<IButton> = ({ ...rest }) => {
   return (
     <button
       type="button"
-      className="text-white bg-text-color-f6 hover:bg-text-color-f6/50 font-medium text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 dark:bg-text-color-f6 "
+      {...rest}
+      className="text-white bg-text-color-f6 hover:bg-text-color-f6/70 transition duration-300 ease-in-out font-medium text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 dark:bg-text-color-f6 "
     >
       PURCHASE NOW
     </button>

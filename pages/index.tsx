@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Badge } from "../Components/Badge/Badge";
 import { Button } from "../Components/Buttons/Button";
 import { ImageCard } from "../Components/Cards/ImageCard";
+import { ImageCard2 } from "../Components/Cards/ImageCard2";
 import { SimpleCard } from "../Components/Cards/SimpleCard";
 import { SimpleCardWD } from "../Components/Cards/SimpleCardWD";
 import { FacebookIcon } from "../Components/Icons/FacebookIcon";
@@ -22,7 +23,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
+      <main className="container mx-auto">
         <h1 className="text-3xl font-bold underline">Hello world!</h1>
         <h1 className="text-3xl font-oswald">
           Các bệnh hô hấp thường gặp khi trời trở lạnh
@@ -48,7 +49,8 @@ const Home: NextPage = () => {
         <SimpleCard />
         <SimpleCardWD />
         <ImageCard />
-        <Button />
+        <ImageCard2 />
+        <Button onClick={() => console.log("123123")} />
       </main>
 
       <footer className={styles.footer}>
