@@ -13,6 +13,7 @@ import { InstagramIcon } from "../Components/Icons/InstagramIcon";
 import { TwitterIcon } from "../Components/Icons/TwitterIcon";
 import { YoutubeIcon } from "../Components/Icons/YoutubeIcon";
 import { Line } from "../Components/Line/Line";
+import { Nav } from "../Components/Nav/Nav";
 import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
@@ -82,7 +83,7 @@ const Home: NextPage = () => {
         </header>
 
         <div className="container mx-auto">
-          <div className="flex justify-between mt-6">
+          <div className="flex justify-between mt-6 items-center">
             <div className="basis-1/3">
               <img
                 className="h-16"
@@ -94,6 +95,14 @@ const Home: NextPage = () => {
               <AdsBanner />
             </div>
           </div>
+          <div className="my-6">
+            <Nav />
+          </div>
+          <p className="font-oswald font-thin">tesstttttttttttttttttt</p>
+          <hr />
+          <p className="font-oswald font-bold">
+            aksdhakshdkashdkhakdhakjshdashdasd
+          </p>
         </div>
 
         <h1 className="text-3xl font-bold underline">Hello world!</h1>
