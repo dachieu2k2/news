@@ -13,6 +13,8 @@ import { InstagramIcon } from "../Components/Icons/InstagramIcon";
 import { TwitterIcon } from "../Components/Icons/TwitterIcon";
 import { YoutubeIcon } from "../Components/Icons/YoutubeIcon";
 import { Layout } from "../Components/Layouts/Layout";
+import { Layout2 } from "../Components/Layouts/Layout2";
+import { Layout3 } from "../Components/Layouts/Layout3";
 import { Line } from "../Components/Line/Line";
 import { Nav } from "../Components/Nav/Nav";
 import { Title } from "../Components/Title/Title";
@@ -106,6 +108,12 @@ const Home: NextPage = () => {
           <div className="mb-12">
             <Layout />
           </div>
+          <div>
+            <Layout2 />
+          </div>
+          <div>
+            <Layout3 />
+          </div>
 
           <p className="font-oswald font-thin">tesstttttttttttttttttt</p>
           <hr />
@@ -132,7 +140,7 @@ const Home: NextPage = () => {
         <Badge text={"Football"} color={"bg-light-purple"} />
         <Badge text={"Cricket"} color={"bg-light-green"} />
         <Badge text={"Baseketball"} color={"bg-light-blue"} />
-        <Line />
+        {/* <Line /> */}
         <SimpleCard />
         <SimpleCard />
         <SimpleCard />
