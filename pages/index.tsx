@@ -12,6 +12,7 @@ import { FacebookIcon } from "../Components/Icons/FacebookIcon";
 import { InstagramIcon } from "../Components/Icons/InstagramIcon";
 import { TwitterIcon } from "../Components/Icons/TwitterIcon";
 import { YoutubeIcon } from "../Components/Icons/YoutubeIcon";
+import { Layout } from "../Components/Layouts/Layout";
 import { Line } from "../Components/Line/Line";
 import { Nav } from "../Components/Nav/Nav";
 import styles from "../styles/Home.module.css";
@@ -98,6 +99,10 @@ const Home: NextPage = () => {
           <div className="my-6">
             <Nav />
           </div>
+          <div className="mb-12">
+            <Layout />
+          </div>
+
           <p className="font-oswald font-thin">tesstttttttttttttttttt</p>
           <hr />
           <p className="font-oswald font-bold">
@@ -129,7 +134,7 @@ const Home: NextPage = () => {
         <SimpleCard />
         <SimpleCard />
         <SimpleCardWD />
-        <ImageCard />
+        {/* <ImageCard /> */}
         <ImageCard2 />
         <Button onClick={() => console.log("123123")} />
       </main>
