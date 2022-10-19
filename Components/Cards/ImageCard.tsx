@@ -26,7 +26,7 @@ export const ImageCard: React.FC<IProps> = ({ data, isMain }) => {
     >
       <Link href="/">
         <img
-          className={`hover:scale-110 w-full h-full transition duration-300 ease-in-out object-contain object-contain`}
+          className={`hover:scale-110 w-full h-full transition duration-300 ease-in-out object-cover `}
           src={img}
           alt="image description"
         />
