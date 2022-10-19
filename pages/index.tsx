@@ -15,6 +15,7 @@ import { YoutubeIcon } from "../Components/Icons/YoutubeIcon";
 import { Layout } from "../Components/Layouts/Layout";
 import { Line } from "../Components/Line/Line";
 import { Nav } from "../Components/Nav/Nav";
+import { Title } from "../Components/Title/Title";
 import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
@@ -139,17 +140,33 @@ const Home: NextPage = () => {
         <Button onClick={() => console.log("123123")} />
       </main>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{" "}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
+      <footer className="bg-text-color-39 h-[335px]">
+        <div className="container mx-auto">
+          <div className="grid grid-cols-4 gap-8">
+            <div className="flex flex-col mt-[44px] gap-9 justify-center">
+              <img
+                className="h-16"
+                src="https://s3-alpha-sig.figma.com/img/c517/8d4e/82148aa4cbddd3cac0de299efa4bec2c?Expires=1667174400&Signature=X2Jd1Gw7V9~~jJb-K30CN-PXMAdPImkHq77p3j3~yuwjYcjQsOvXRaqtApXFCsfS6XRe4BZlLr5ZzTBRBbqVbmy~52CXOla5q5FRnj6cpSeNT2Xt7oWaLeHnldICiAFwy06Ozom0inzSV-3nZeaFiWsjnLZvQuO39inmGHXUa35lyRvdbRrfHsl~5JfYOI2u8qLphdeo0o0sQYkZ5WQ64Iu9xciXW1YqNCiuhU0SJB48DDycMbskB27g1JebPRq6OsZEodEZOLfqEqAKBpTjDr~XuM~Z~9nliG0suyLfHv3UfEVVW26mg0dDmoHsz1~-6TK0NhmcPjZdmJBApPO-zA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+                alt="logo"
+              />
+              <p className="font-roboto text-white text-sm">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque,
+                pellentesque dictum posuere id diam rutrum.
+              </p>
+              <div className="flex justify-around scale-80">
+                <FacebookIcon />
+                <TwitterIcon />
+                <InstagramIcon />
+                <YoutubeIcon />
+              </div>
+            </div>
+            <div>
+              <Title text="Photo gallery" />
+            </div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
       </footer>
     </div>
   );
