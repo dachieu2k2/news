@@ -11,18 +11,16 @@ export const Nav = () => {
   return (
     <nav className="bg-text-color-39 ">
       <div className="container flex flex-wrap justify-between items-center mx-auto">
-        <a href="/" className="flex items-center sm:block md:hidden lg:hidden">
-          {/* <img
-                    src="https://flowbite.com/docs/images/logo.svg"
-                    className="mr-3 h-6 sm:h-9"
-                    alt="Flowbite Logo"
-                  /> */}
+        <Link
+          href="/"
+          className="flex items-center sm:block md:hidden lg:hidden"
+        >
           <img
-            className="mr-3 h-6 sm:h-9"
-            src="https://s3-alpha-sig.figma.com/img/985f/3b9b/769c2566f8eeb5e064a547be38b5b591?Expires=1666569600&Signature=XBiSkOojPVw6b3Zl5awM~fjoO3KKx~byc3zhsFQO80eRS5Q26vR7iW3b87LxSvtP345BLq4cn8knBr421o3O8Iih4pJGBynLSQZZle9JPM4rbP4cm6Tj3NhN6Ci~VTD3MoZwadjdzseNqieyTzWRjdbkbBg65xDyPBRzv1uHb7hp7DBsJzDLd~53ITQDlyX3B1ffTUXjapKMlZYrnge~v4ff~-l4Qbro6t7V5GdyMHNgpsOG5NXDkgLar~IfmkPJaw2yhL3QaXS9wDESjPD9UhPiBxzzeFGpmvNvzIazowXB3Sqpm9NWDO8rIZiIzZObWWQLH4Vi5izwhqqatT88oQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+            className="mr-3 h-6 sm:h-9 md:hidden lg:hidden"
+            src="https://s3-alpha-sig.figma.com/img/985f/3b9b/769c2566f8eeb5e064a547be38b5b591?Expires=1667779200&Signature=Ef~mdLMpazTMmvVmjSwRc4CMMouB1WZzbD6T5txeanZOeyfSj9141rlSE~A-GDCc-rcmQTUNe898sbdkr~eWuUlHgcrtoojO9DEognjdHFARFevfkqxMKLap8Sa9nq-Hc4U2qZlG3yEWZdIWOdJA8A0BD-DOC2ssqVCqnvCi4Pxqu~~UfyLqtpJYhwsNR1V-2hIgzu4MMRXsKWPQycldkUAyz~zu2Q~Hi6DOc5NvHam7c5p7adqvCNa6H1gHyWpn-6awcCcWUpDZyRPyTvqCNGGFZ4lYEafTG3IgxcqmWpK~zs5KabS5eEZA-PmhznH4I2JhvxWlu~I0Hxa9Q1jpbQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
             alt="logo"
           />
-        </a>
+        </Link>
         <div className="flex md:order-2">
           <button
             type="button"
