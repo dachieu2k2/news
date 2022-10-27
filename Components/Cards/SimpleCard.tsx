@@ -5,8 +5,8 @@ export const SimpleCard = () => {
     <div className="flex flex-col items-center bg-white md:flex-row md:max-w-md">
       <div className="overflow-hidden relative">
         <img
-          className="object-cover w-full h-96  md:h-auto md:w-36 md:rounded-none max-w-xs hover:scale-110 transition duration-300 ease-in-out"
-          src="https://s3-alpha-sig.figma.com/img/3d0d/5bae/ceab2804df9ca36e22234157b37e2c15?Expires=1666569600&Signature=OUtK8glbDNnfJGLPgpSjM15Lx8wqEBw9ZyderRS4MbhnCz9CB8ia~T2qeNWwAgyUi92xiwsglvDZXIGvVJpwvokfoGm9gNjOqlfV1xwXeyVveUKicBapvNhYOKz-0qy8JysIdUo4TVCA1QCRp3Q5eVdRA27yoRuGHtfQeiXbhBqStSqCT~SLvEUjUveO0e08ckOYeTX44SeG6DIPYS9JuyK2c5Ntyn4xe5Ok8mP-urJQEF7VfVTteFKnxrLG0nd0tb7YJrCSpjoTFFjo02EHkOajWgnizxvAwHIeI4TjCZ4ri9V1iJ6wydgzZfUdOrgYsAjYRNUG~4NDfq4ZMmHACg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+          className="object-cover w-full h-96  md:h-auto md:w-24 md:rounded-none max-w-xs hover:scale-110 transition duration-300 ease-in-out"
+          src="https://s3-alpha-sig.figma.com/img/3d0d/5bae/ceab2804df9ca36e22234157b37e2c15?Expires=1667779200&Signature=RAYLIqJl7TxK~EZ5gJm9SlR6JI0qKOaLnxG8RRKwM9da76b7aH8woe7SU0KyZV~jsr~J1WRLyiIkK-vhsHPJgNGnnnP7z2btqYvI9aCqWdFh7XYLzb-SF402PsdxUxD~TvGXDtPYdpWq-3yiS4we9qL7Rq8ZYRCyHNUX7YJA-2sU~jEAidHzp8jsMFnG-ICkEaJz~lmvJVmsVo2aGI87KQd29uxeBFpd9vHyD6KgxBHVH8wu59vmmT8EBf3IDnvPaNqLuVqvLlfPNOA0qcqQM~RTJ1TZoo6ZlGhPRCO-GpK3wSI2ZQK3ETusRKaS5dIGo47G16CcG7roFZKxfHjXIQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
           alt=""
         />
         <div className="absolute top-1 left-1">

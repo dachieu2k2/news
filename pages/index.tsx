@@ -8,6 +8,8 @@ import { ImageCard } from "../Components/Cards/ImageCard";
 import { ImageCard2 } from "../Components/Cards/ImageCard2";
 import { SimpleCard } from "../Components/Cards/SimpleCard";
 import { SimpleCardWD } from "../Components/Cards/SimpleCardWD";
+import { SimpleVideoCard } from "../Components/Cards/SimpleVideoCard";
+import { VideoCard } from "../Components/Cards/VideoCard";
 import { FacebookIcon } from "../Components/Icons/FacebookIcon";
 import { InstagramIcon } from "../Components/Icons/InstagramIcon";
 import { TwitterIcon } from "../Components/Icons/TwitterIcon";
@@ -18,6 +20,7 @@ import { Layout3 } from "../Components/Layouts/Layout3";
 import { Line } from "../Components/Line/Line";
 import { Nav } from "../Components/Nav/Nav";
 import { Title } from "../Components/Title/Title";
+import { TitleLayout2 } from "../Components/Title/TitleLayout2";
 import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
@@ -94,7 +97,7 @@ const Home: NextPage = () => {
             <div className="basis-1/3">
               <img
                 className="h-16"
-                src="https://s3-alpha-sig.figma.com/img/985f/3b9b/769c2566f8eeb5e064a547be38b5b591?Expires=1666569600&Signature=XBiSkOojPVw6b3Zl5awM~fjoO3KKx~byc3zhsFQO80eRS5Q26vR7iW3b87LxSvtP345BLq4cn8knBr421o3O8Iih4pJGBynLSQZZle9JPM4rbP4cm6Tj3NhN6Ci~VTD3MoZwadjdzseNqieyTzWRjdbkbBg65xDyPBRzv1uHb7hp7DBsJzDLd~53ITQDlyX3B1ffTUXjapKMlZYrnge~v4ff~-l4Qbro6t7V5GdyMHNgpsOG5NXDkgLar~IfmkPJaw2yhL3QaXS9wDESjPD9UhPiBxzzeFGpmvNvzIazowXB3Sqpm9NWDO8rIZiIzZObWWQLH4Vi5izwhqqatT88oQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+                src="https://s3-alpha-sig.figma.com/img/985f/3b9b/769c2566f8eeb5e064a547be38b5b591?Expires=1667779200&Signature=Ef~mdLMpazTMmvVmjSwRc4CMMouB1WZzbD6T5txeanZOeyfSj9141rlSE~A-GDCc-rcmQTUNe898sbdkr~eWuUlHgcrtoojO9DEognjdHFARFevfkqxMKLap8Sa9nq-Hc4U2qZlG3yEWZdIWOdJA8A0BD-DOC2ssqVCqnvCi4Pxqu~~UfyLqtpJYhwsNR1V-2hIgzu4MMRXsKWPQycldkUAyz~zu2Q~Hi6DOc5NvHam7c5p7adqvCNa6H1gHyWpn-6awcCcWUpDZyRPyTvqCNGGFZ4lYEafTG3IgxcqmWpK~zs5KabS5eEZA-PmhznH4I2JhvxWlu~I0Hxa9Q1jpbQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
                 alt="logo"
               />
             </div>
@@ -108,14 +111,71 @@ const Home: NextPage = () => {
           <div className="mb-12">
             <Layout />
           </div>
-          <div>
+          <div className="mb-9">
             <Layout2 />
           </div>
-          <div>
+          <div className="mb-12">
             <Layout3 />
           </div>
+          <div className="flex mb-12">
+            <div className="basis-3/4">
+              <div className="mb-12">
+                <TitleLayout2 text="Sports" />
+                <div className="mt-[24px] flex">
+                  <div className="basis-2/5 mr-[29px]">
+                    <SimpleCardWD />
+                  </div>
+                  <div className="basis-3/5 grid gap-y-4">
+                    <SimpleCard />
+                    <SimpleCard />
+                    <SimpleCard />
+                    <SimpleCard />
+                    <SimpleCard />
+                  </div>
+                </div>
+              </div>
 
-          <p className="font-oswald font-thin">tesstttttttttttttttttt</p>
+              <div className="mb-12">
+                <TitleLayout2 text="Life Style" />
+                <div className="mt-[24px] flex gap-x-8">
+                  <div className="basis-1/2 grid gap-y-6">
+                    <SimpleCardWD />
+                    <SimpleCard />
+                    <SimpleCard />
+                  </div>
+                  <div className="basis-1/2 grid gap-y-6">
+                    <SimpleCardWD />
+                    <SimpleCard />
+                    <SimpleCard />
+                  </div>
+                </div>
+              </div>
+              <div className="mb-12">
+                <AdsBanner />
+              </div>
+              <div className="mb-12">
+                <TitleLayout2 text="Video" />
+                <div className="mt-[24px] grid grid-cols-3 gap-4">
+                  <div className="col-span-3">
+                    <VideoCard />
+                  </div>
+                  <div>
+                    <SimpleVideoCard />
+                  </div>
+                  <div>
+                    <SimpleVideoCard />
+                  </div>
+                  <div>
+                    <SimpleVideoCard />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="basis-1/4"></div>
+          </div>
+        </div>
+
+        {/* <p className="font-oswald font-thin">tesstttttttttttttttttt</p>
           <hr />
           <p className="font-oswald font-bold">
             aksdhakshdkashdkhakdhakjshdashdasd
@@ -133,23 +193,35 @@ const Home: NextPage = () => {
         <TwitterIcon />
         <InstagramIcon />
         <YoutubeIcon />
-        {/* <span className="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 dark:bg-blue-200 dark:text-blue-800">
-          Default
-        </span> */}
         <Badge text={"All"} color={"bg-primary"} />
         <Badge text={"Football"} color={"bg-light-purple"} />
         <Badge text={"Cricket"} color={"bg-light-green"} />
         <Badge text={"Baseketball"} color={"bg-light-blue"} />
-        {/* <Line /> */}
         <SimpleCard />
         <SimpleCard />
         <SimpleCard />
         <SimpleCard />
         <SimpleCardWD />
-        {/* <ImageCard /> */}
         <ImageCard2 />
-        <Button onClick={() => console.log("123123")} />
+        <Button onClick={() => console.log("123123")} /> */}
       </main>
+      <div className=" flex content-center items-center mt-12">
+        {[
+          "https://s3-alpha-sig.figma.com/img/b60e/4bca/6a43a8fb40ea6dbb7498522001078a39?Expires=1667174400&Signature=cQjJ3QxOWCUJky-jzZu2ARZDNfAQXKdDTzfl345RFdmdpfkPopC8h41YWBZ92XtIEEHAioqMwjq3UqRYjycccouFX6~MgRdqa1prwSNKwAV~8jnsdlF8~EmZoPmPQ-ozwoSePKsGzUB4EWXpaWxJJvr6nQaqnrYHuicmyL0dz9berTFqhkRM3XmXih8gVkVuqTbnhTdYe~ybLMgfC2feyF4Ar-w5~te-jJVAGPoYdewgRvwoOdmLDnp9bGH~VE1M7JcMaS5zfr1~S60DvrWD7LqeFWFfnZzYgq2JJqXNB6gyT8tndpPdBSONJcOZKUlXp6umgrfFd64XdUBKuWwWTw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
+          "https://s3-alpha-sig.figma.com/img/dd1f/6171/ef240750f25e1792d82394377d017ee2?Expires=1667174400&Signature=fxQ9gDn54MgINiZzx6b-oBc2NgxxAIK4fqZMKkXymcFmFndaEWCnZQjYXljvnNB3ovmKA8CpEKKVDkYSpMr-UJ1AVnWwnBa43wmNqN0iDfx~lPhNjg4lzmSOrN8l-YDGH0MfLe-wiPLv6LK2D9~wrNalsiU0Uagxu67ZroZPokwxLcrHATlP0UNKjbvXJZBEjjqqHRk19DG6kDhHmIASpdXXJyryCSLF-9DD4Yy0yppW7yBOcTh8dqwHylfKAVjFf260fjCVZR48UCsaNA48aL55mUoCGTp-ghQn~sPHNoKY6VWxE4R0SK4cMVPOA9X81JJab~1ka4nX~eW0ujh6Cw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
+          "https://s3-alpha-sig.figma.com/img/cc3c/c0c7/2c9f77f01226fbdc280c4e7bcea9655d?Expires=1667174400&Signature=AmHubz-9jhCZLhQNxtxrKkTKx4srqsuHuVISm1w4duOJJMV~yhum7Lo6pZhkwKmX-GkP~~7o~x7vIsc3wQWDN8NoXpzZk0lQcGWF6omGo1QltNS71SSHWBqLcIQBEJ2OKgF8trqkHO1MhzbnuqlqHfDyakiWv5ivGjjH5Q5eqTlDJ9HtMYVvxaWbzTe8-J1cPlr-WTeUwfrbxH8C4G2gDSkYqSNNMBu~p9JWsV3uYF5vT2AtHrcuN-mRg2mg7lkE01Sj5oG8zTL~kqNJzqBpAOTGeItz9Lc~BAPv5CtNUFydAfombzZWPbCuDBT3dUlvRVuwZSLMXYXW9bU2uquIRg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
+          "https://s3-alpha-sig.figma.com/img/e5d8/7f00/dc38e9b5d49a64d971faa1fb70d28534?Expires=1667174400&Signature=aQhQUOc1PSp7MQYrrui-uPVTu~ZTy29k87tp3cC~30BKaV00ahBFCzrYTwJtgEcZdoqQd~juc5cGFIi2TkGda6YpjyHA29pmfDhLFoiOsIJBg~pyKEtjd5QzMxUja6mteqWsTRVbylDxrABFgRCEle9wKAiq-L5P6JJO4Mdl114wc04MSjH9j~A8pvriHvSSG9PKKgvZm5mcAYeexBRleH4ijv0OXDC81jRvO7LYC8IY495SlDhAqJE0UKJfAZTtcoTMWsYmyKsGOWlIzoweg2TIp0eCIqj~-tj7Co1dQGSK1Qh7yTSY7Cn8P8HhBWvBndCCcSkd2cxRe3Sp1muhzQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
+          "https://s3-alpha-sig.figma.com/img/ca5e/cfaa/0830c5d07df5419ff2138ced8ca46208?Expires=1667174400&Signature=MaQcXp3OmZi5NagRE3GO6NWvjEM8bBK0KGLHJDlcu-OAMR83rycdf8~vEKjGzfncwUcrSsadtRT3SeYqEzu7gjZU49YDGmeG66HNqJP5ma6lGWyQgTAFgHnwO~6E2FL52UUgfuWAY1Rk9F6DsnjZfdmDeVicIXD~lhnLXPo3JPPEhsXWm~92It4PIgl4Go1PVgKdGQqaRVD0i5RhaKK1Ac5OQQl4kp2vVXx~zNtb4HbdjDAYknNO5J3z2eHDVBuiJSRWvgf4OqQCz21mlG13iWZWLBnO3pjloTHGReGIkrAdio8iJlDMH8uE0GGyFFpYGGBVIlhHvv8pD439nOqlhg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
+        ].map((value, index) => (
+          <div key={index}>
+            <img
+              src={value}
+              alt="img-footer "
+              className="w-72 h-72 object-cover"
+            />
+          </div>
+        ))}
+      </div>
 
       <footer className="bg-text-color-39 h-[335px]">
         <div className="container mx-auto">

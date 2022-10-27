@@ -6,7 +6,7 @@ export const ImageCard2 = () => {
       <a href="#">
         <img
           className="hover:scale-110  transition duration-300 ease-in-out w-full object-fill"
-          src="https://s3-alpha-sig.figma.com/img/c6d0/3202/c85a9806140d1ee09e63a1c2e8db81c0?Expires=1666569600&Signature=eMpQJo5yM5u3Oq7b5G9y6XUpdWxiz1OFp0RMmg6-ipQTPc3onfDG3BHwmCKUABOiys0k5FeMrquNQDFGJaLq8eSAzMHk22Z90z-Z4u0LJ94jhy-APu9g3HGH3nYj39zvov1u9qp9-PDduT8rpaZJP4PsVadgds1XhR-XzBR0FXwtt3W8wiceTrabsDhTSDnUS8asqJ56-0GYu7isz8F11D6YaZuuDtluvd3H7LBJmWtTJdtsykZEYxutiUP95VZ9LuPKeyn8S2Z3ixMmsmND0UPSHTXNoiqr9k92-pTEOhx9kdWQwcZae72hngApbtjvdjiE9ftDAPG1PMzjCF7qeg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+          src="https://s3-alpha-sig.figma.com/img/c6d0/3202/c85a9806140d1ee09e63a1c2e8db81c0?Expires=1667779200&Signature=SFLIlklTSZ4MB8e2-6Yn69ca-p7DJLT8QXkXTc~CK1M11~cjsiK~bS3h7XsD~D2unXwwDv3txPWqnHW0hliEtoE4dmIDVY8Z1lbsFe~iKZENDf9FYgRRNg7xfcWSupq1fdeL-ZXSZ5jqFVrpiqSon~7AbKQ~9pwwyybwJSg-dGEHK8KqQy9Dlbs-LrmJGiUy3y32Uca6hLhk5fej~E7Q0dyjROBTsK9-3rEFM4Ns9a9Ajljpcu5~5xW-NoLlDdqxUcGHPtViL1sLpDIPk8s9SFQhADetAgNbe0WvUfAKVmDDnkvyzdTcfuxQVrTQ~ZW7l-ufdGhGnNHBUNpZqRpjMg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
           alt="image description"
         />
       </a>

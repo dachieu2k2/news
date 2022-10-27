@@ -40,14 +40,14 @@ const fakeDataNewsPopular: INewsPopular[] = [
 ];
 
 export const Layout2 = () => (
-  <div className="flex gap-x-7">
+  <div className="flex gap-x-7 ">
     <div className="basis-3/4">
       <TitleLayout2 text="Cẩm nang các bệnh" />
       <div className="mt-[24px] flex">
-        <div className="basis-1/2">
+        <div className="basis-2/5 mr-[29px]">
           <SimpleCardWD />
         </div>
-        <div className="basis-1/2 gap-y-4">
+        <div className="basis-3/5 grid gap-y-4">
           <SimpleCard />
           <SimpleCard />
           <SimpleCard />
@@ -64,7 +64,7 @@ export const Layout2 = () => (
           <p className="text-text-color-39 cursor-pointer">Most views</p>
         </div>
         <Line />
-        <div className="mt-[36px]  gap-y-4">
+        <div className="mt-[36px]  grid gap-y-4">
           <SimpleCard />
           <SimpleCard />
           <SimpleCard />
