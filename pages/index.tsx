@@ -1,11 +1,9 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
+import { AbsImage } from "../Components/Ads/AbsImage";
 import { AdsBanner } from "../Components/Ads/AdsBanner";
 import { Badge } from "../Components/Badge/Badge";
 import { Button } from "../Components/Buttons/Button";
-import { ImageCard } from "../Components/Cards/ImageCard";
-import { ImageCard2 } from "../Components/Cards/ImageCard2";
 import { SimpleCard } from "../Components/Cards/SimpleCard";
 import { SimpleCardWD } from "../Components/Cards/SimpleCardWD";
 import { SimpleVideoCard } from "../Components/Cards/SimpleVideoCard";
@@ -117,8 +115,8 @@ const Home: NextPage = () => {
           <div className="mb-12">
             <Layout3 />
           </div>
-          <div className="flex mb-12">
-            <div className="basis-3/4">
+          <div className="flex mb-12 gap-x-7">
+            <div className="basis-3/4 ">
               <div className="mb-12">
                 <TitleLayout2 text="Sports" />
                 <div className="mt-[24px] flex">
@@ -171,7 +169,109 @@ const Home: NextPage = () => {
                 </div>
               </div>
             </div>
-            <div className="basis-1/4"></div>
+            <div className="basis-1/4">
+              <div className="mb-6">
+                <div className="relative mb-3">
+                  <div className="flex justify-between font-medium text-sm font-normal font-oswald items-center">
+                    <p className=" text-text-color-f6  cursor-pointer">
+                      Stay connected
+                    </p>
+                  </div>
+                  <Line />
+                </div>
+              </div>
+              <div className="mt-[36px] mb-[25px]">
+                <div className="grid grid-cols-2 gap-3">
+                  <Button>TEST</Button>
+                  <Button>TEST</Button>
+                  <Button>TEST</Button>
+                  <Button>TEST</Button>
+                  <Button>TEST</Button>
+                  <Button>TEST</Button>
+                </div>
+              </div>
+              <div className="mb-[25px]">
+                <AbsImage />
+              </div>
+              <div className="bg-[#DEDADA] h-[270px] flex items-center justify-center flex-col mb-[25px]">
+                <div className="font-oswald text-lg">Get Latest Updates</div>
+                <div className="mt-[25px] m-x-[25px] w-4/5">
+                  <input
+                    type="text"
+                    className="bg-gray-50  text-gray-900 text-sm focus:ring-blue-500 block w-full p-3.5 text-center"
+                    placeholder="Your email address"
+                  />
+                </div>
+                <div className="mt-[10px] m-x-[25px] w-4/5">
+                  <button
+                    type="button"
+                    className="text-white bg-text-color-f6 hover:bg-text-color-f6/70 transition duration-300 ease-in-out font-medium text-sm px-5 py-2.5 text-center inline-flex items-center justify-center mr-2 font-bold w-full text-lg"
+                  >
+                    Subscribe
+                  </button>
+                </div>
+              </div>
+              <div>
+                <div className="relative mb-3">
+                  <div className="flex justify-between font-medium text-sm font-normal font-oswald items-center">
+                    <p className=" text-text-color-f6  cursor-pointer">
+                      Categories
+                    </p>
+                  </div>
+                  <Line />
+                </div>
+                <div className="mt-[56px]">
+                  <div className="flex justify-between  ">
+                    <p className="font-roboto font-normal">
+                      <span className="mr-2">&gt;</span> Life Style
+                    </p>
+                    <Badge text={"50"} color="bg-primary" />
+                  </div>
+                  <div className="flex justify-between mt-[17px] ">
+                    <p className="font-roboto font-normal">
+                      <span className="mr-2">&gt;</span> Life Style
+                    </p>
+                    <Badge text={"50"} color="bg-primary" />
+                  </div>
+                  <div className="flex justify-between mt-[17px] ">
+                    <p className="font-roboto font-normal">
+                      <span className="mr-2">&gt;</span> Life Style
+                    </p>
+                    <Badge text={"50"} color="bg-primary" />
+                  </div>
+                  <div className="flex justify-between mt-[17px] ">
+                    <p className="font-roboto font-normal">
+                      <span className="mr-2">&gt;</span> Life Style
+                    </p>
+                    <Badge text={"50"} color="bg-primary" />
+                  </div>
+                  <div className="flex justify-between mt-[17px] ">
+                    <p className="font-roboto font-normal">
+                      <span className="mr-2">&gt;</span> Life Style
+                    </p>
+                    <Badge text={"50"} color="bg-primary" />
+                  </div>
+                  <div className="flex justify-between mt-[17px] ">
+                    <p className="font-roboto font-normal">
+                      <span className="mr-2">&gt;</span> Life Style
+                    </p>
+                    <Badge text={"50"} color="bg-primary" />
+                  </div>
+                  <div className="flex justify-between mt-[17px] ">
+                    <p className="font-roboto font-normal">
+                      <span className="mr-2">&gt;</span> Life Style
+                    </p>
+                    <Badge text={"50"} color="bg-primary" />
+                  </div>
+                  <div className="flex justify-between mt-[17px] ">
+                    <p className="font-roboto font-normal">
+                      <span className="mr-2">&gt;</span> Life Style
+                    </p>
+                    <Badge text={"50"} color="bg-primary" />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
